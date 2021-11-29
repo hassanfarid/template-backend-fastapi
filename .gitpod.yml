@@ -1,0 +1,18 @@
+---
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - name: Install Project Requirements
+    init: pip install -r requirements.txt
+  - name: Install Environemnt Dependencies
+    init: pip install uvicorn[standard]
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 3000
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - ms-python.python
+    - entepe85.gitlens  
+    - esbenp.prettier-vscode
